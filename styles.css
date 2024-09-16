@@ -57,15 +57,54 @@ nav ul li a:hover {
 }
 
 /* Section Styling */
+/* Add this to your styles.css */
+
+/* Section Styling */
 .section {
     padding: 100px 20px;
     text-align: center;
-    min-height: 100vh; /* Full screen height for each section */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+#home .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%); /* Center the image vertically */
+}
+
+.profile-picture img {
+    width: 150px; /* Adjust the size of the image */
+    height: 150px;
+    border-radius: 50%; /* Makes the picture round */
+    border: 3px solid #FFD700; /* Gold border for styling */
+}
+
+/* Text content styling */
+.intro-text {
+    margin-left: 20%;
+}
+
+.intro-text h2 {
+    font-size: 36px;
+}
+
+.intro-text p {
+    font-size: 18px;
+}
+
 
 #home {
     background-color: black;
