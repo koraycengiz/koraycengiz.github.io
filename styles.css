@@ -43,16 +43,19 @@ header {
     margin-right: 15px;
 }
 
+/* Profile picture styling */
 .profile-picture {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    left: 15%; /* Adjust the horizontal position from the left */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Fine-tune vertical centering */
 }
 
 .profile-picture img {
-    width: 50px; /* Adjust the size of the image */
-    height: 50px;
+    width: 250px; /* Adjust the size of the image */
+    height: 250px;
     border-radius: 50%; /* Makes the picture round */
-    border: 2px solid #FFD700; /* Gold border for styling */
+    border: 3px solid #FFD700; /* Gold border for styling */
 }
 
 /* Navigation Styling */
