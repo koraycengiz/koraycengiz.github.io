@@ -31,10 +31,28 @@ header {
     padding: 0 20px;
 }
 
-/* Name Styling */
+/* Adjusted logo and profile picture layout */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo h1 {
     font-size: 24px;
     color: white;
+    margin-right: 15px;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 50px; /* Adjust the size of the image */
+    height: 50px;
+    border-radius: 50%; /* Makes the picture round */
+    border: 2px solid #FFD700; /* Gold border for styling */
 }
 
 /* Navigation Styling */
@@ -66,27 +84,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Allows for absolute positioning of the image */
-}
-
-/* Profile picture styling */
-.profile-picture {
-    position: absolute;
-    left: 40%; /* Adjust the horizontal position from the left */
-    top: 50%; /* Vertically center the image */
-    transform: translateY(-50%); /* Fine-tune vertical centering */
-}
-
-.profile-picture img {
-    width: 150px; /* Adjust the size of the image */
-    height: 150px;
-    border-radius: 50%; /* Makes the picture round */
-    border: 3px solid #FFD700; /* Gold border for styling */
 }
 
 /* Center the intro text */
 .intro-text {
-    margin-left: 20%; /* Keep the text away from the image */
     text-align: center;
 }
 
