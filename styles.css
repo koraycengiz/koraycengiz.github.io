@@ -72,7 +72,7 @@ nav ul li a:hover {
 /* Profile picture styling */
 .profile-picture {
     position: absolute;
-    left: 10%; /* Adjust the horizontal position from the left */
+    left: 40%; /* Adjust the horizontal position from the left */
     top: 50%; /* Vertically center the image */
     transform: translateY(-50%); /* Fine-tune vertical centering */
 }
