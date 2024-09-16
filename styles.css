@@ -31,11 +31,31 @@ header {
     padding: 0 20px;
 }
 
+/* Adjusted logo and profile picture layout */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo h1 {
     font-size: 24px;
     color: white;
+    margin-right: 15px;
 }
 
+.profile-picture {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 50px; /* Adjust the size of the image */
+    height: 50px;
+    border-radius: 50%; /* Makes the picture round */
+    border: 2px solid #FFD700; /* Gold border for styling */
+}
+
+/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -57,44 +77,18 @@ nav ul li a:hover {
 }
 
 /* Section Styling */
-/* Add this to your styles.css */
-
-/* Section Styling */
 .section {
     padding: 100px 20px;
     text-align: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Full screen height for each section */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
-#home .home-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* Profile picture styling */
-.profile-picture {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%); /* Center the image vertically */
-}
-
-.profile-picture img {
-    width: 150px; /* Adjust the size of the image */
-    height: 150px;
-    border-radius: 50%; /* Makes the picture round */
-    border: 3px solid #FFD700; /* Gold border for styling */
-}
-
-/* Text content styling */
+/* Center the intro text */
 .intro-text {
-    margin-left: 20%;
+    text-align: center;
 }
 
 .intro-text h2 {
@@ -103,27 +97,6 @@ nav ul li a:hover {
 
 .intro-text p {
     font-size: 18px;
-}
-
-
-#home {
-    background-color: black;
-}
-
-#about {
-    background-color: #222;
-}
-
-#experience {
-    background-color: #333;
-}
-
-#projects {
-    background-color: #444;
-}
-
-#accounts {
-    background-color: #555;
 }
 
 /* Smooth scrolling */
