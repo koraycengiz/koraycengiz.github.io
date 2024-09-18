@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
     position: fixed;
     top: 0;
@@ -31,34 +30,11 @@ header {
     padding: 0 20px;
 }
 
-/* Adjusted logo and profile picture layout */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo h1 {
     font-size: 24px;
     color: white;
-    margin-right: 15px;
 }
 
-/* Profile picture styling */
-.profile-picture {
-    position: absolute;
-    left: 15%; /* Adjust the horizontal position from the left */
-    top: 50%; /* Vertically center the image */
-    transform: translateY(-50%); /* Fine-tune vertical centering */
-}
-
-.profile-picture img {
-    width: 250px; /* Adjust the size of the image */
-    height: 250px;
-    border-radius: 50%; /* Makes the picture round */
-    border: 3px solid #FFD700; /* Gold border for styling */
-}
-
-/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -76,33 +52,71 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Gold hover color */
+    color: #FFD700;
 }
 
-/* Section Styling */
+/* Center the content */
 .section {
     padding: 100px 20px;
-    text-align: center;
-    min-height: 100vh; /* Full screen height for each section */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Center the intro text */
-.intro-text {
+/* Intro Container */
+.intro-container {
     text-align: center;
+    position: relative;
 }
 
+/* Profile Picture Styling */
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FFD700; /* Gold border */
+}
+
+/* Text Styling */
 .intro-text h2 {
     font-size: 36px;
 }
 
 .intro-text p {
+    margin-top: 10px;
     font-size: 18px;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Adjust as necessary */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Make sure icons are responsive on smaller screens */
+@media (max-width: 768px) {
+    .social-icons {
+        right: 10px; /* Bring them closer on smaller screens */
+    }
 }
