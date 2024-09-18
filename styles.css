@@ -93,23 +93,26 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Social Media Styling */
-.social-media {
-    position: absolute;
-    right: 20px; /* Adjusts the distance from the right */
-    top: 50%; /* Aligns to the vertical center */
-    transform: translateY(-50%); /* Ensures proper vertical alignment */
+/* Styling the social media icons */
+.social-icons {
+    position: absolute; /* Position icons relative to the page */
+    top: 50%; /* Vertically center them */
+    right: 10px; /* Place them on the rightmost edge */
+    transform: translateY(-50%); /* Adjust vertical alignment */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between icons */
 }
 
-.social-media a {
-    color: white;
-    font-size: 32px;
-    margin: 10px 0;
-    transition: color 0.3s;
+.social-icons a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Set the same text color */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-.social-media a:hover {
-    color: #FFD700;
+.social-icons a:hover {
+    color: #f1c40f; /* Change icon color on hover (yellow) */
 }
+
