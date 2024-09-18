@@ -62,6 +62,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Intro Container */
@@ -92,31 +93,23 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Social Media Icons */
-.social-icons {
-    position: fixed;
-    top: 50%;
-    right: 20px; /* Adjust as necessary */
-    transform: translateY(-50%);
+/* Social Media Styling */
+.social-media {
+    position: absolute;
+    right: 20px; /* Adjusts the distance from the right */
+    top: 50%; /* Aligns to the vertical center */
+    transform: translateY(-50%); /* Ensures proper vertical alignment */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between the icons */
 }
 
-.social-icons a {
+.social-media a {
     color: white;
-    font-size: 30px;
+    font-size: 32px;
+    margin: 10px 0;
     transition: color 0.3s;
-    text-decoration: none;
 }
 
-.social-icons a:hover {
-    color: #FFD700; /* Gold color on hover */
-}
-
-/* Make sure icons are responsive on smaller screens */
-@media (max-width: 768px) {
-    .social-icons {
-        right: 10px; /* Bring them closer on smaller screens */
-    }
+.social-media a:hover {
+    color: #FFD700;
 }
