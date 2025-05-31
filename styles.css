@@ -160,84 +160,55 @@ nav ul li a:hover {
 
 .timeline {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 80px;
-    padding: 40px 0;
-    border-top: 4px solid #FFD700;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 700px;
+    border-left: 4px solid #FFD700;
 }
 
 .timeline-item {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-}
-
-.timeline-item .timeline-date {
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 10px;
-    order: -1; /* Place above dot */
-}
-
-.timeline-item.down .timeline-date {
-    order: 2; /* Place below dot for "down" items */
-    margin-top: 10px;
-    margin-bottom: 0;
+    padding-left: 30px;
+    margin-bottom: 50px;
 }
 
 .timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 0;
     width: 20px;
     height: 20px;
     background-color: #FFD700;
     border-radius: 50%;
     border: 2px solid white;
-    z-index: 2;
 }
 
 .timeline-content {
     background-color: #1e1e1e;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 10px;
+    position: relative;
     color: white;
-    width: 200px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    position: absolute;
-}
-
-.timeline-item.up .timeline-content {
-    bottom: 100%;  /* Show above the dot */
-    margin-bottom: 20px;
-}
-
-.timeline-item.down .timeline-content {
-    top: 100%;  /* Show below the dot */
-    margin-top: 20px;
 }
 
 .timeline-content::before {
     content: "";
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
     border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e1e1e transparent transparent;
 }
 
-.timeline-item.up .timeline-content::before {
-    top: 100%;
-    border-width: 10px 10px 0 10px;
-    border-color: #1e1e1e transparent transparent transparent;
+.timeline-date {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: block;
 }
-
-.timeline-item.down .timeline-content::before {
-    bottom: 100%;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #1e1e1e transparent;
-}
-
 
