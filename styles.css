@@ -55,20 +55,39 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Center the content */
+/* Section Styling */
 .section {
-    padding: 100px 20px;
+    padding: 120px 20px 60px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Intro Container */
-.intro-container {
+/* ABOUT SECTION LAYOUT */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-left {
+    flex: 1;
+    max-width: 300px;
     text-align: center;
-    position: relative;
+}
+
+.about-right {
+    flex: 2;
+    max-width: 600px;
 }
 
 /* Profile Picture Styling */
@@ -83,36 +102,50 @@ nav ul li a:hover {
     border: 3px solid #FFD700; /* Gold border */
 }
 
-/* Text Styling */
+/* Name and Title */
 .intro-text h2 {
-    font-size: 36px;
+    font-size: 24px;
+    margin: 0;
 }
 
 .intro-text p {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 5px;
 }
 
-/* Styling the social media icons */
+/* About Text */
+.about-right p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Social Icons */
 .social-icons {
-    position: absolute; /* Position icons relative to the page */
-    top: 50%; /* Vertically center them */
-    right: 10px; /* Place them on the rightmost edge */
-    transform: translateY(-50%); /* Adjust vertical alignment */
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Space between icons */
+    gap: 20px;
 }
 
 .social-icons a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* Set the same text color */
-    font-size: 24px; /* Size of the icons */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #f1c40f; /* Change icon color on hover (yellow) */
+    color: #FFD700;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-right {
+        max-width: 90%;
+    }
+}
