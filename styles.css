@@ -169,27 +169,40 @@ nav ul li a:hover {
 
 .timeline-item {
     position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 50px;
 }
 
+.timeline-date {
+    width: 80px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #aaa;
+    flex-shrink: 0;
+}
+
 .timeline-dot {
-    position: absolute;
-    left: -10px;
-    top: 0;
+    position: relative;
+    margin-top: 5px;
     width: 20px;
     height: 20px;
     background-color: #FFD700;
     border-radius: 50%;
     border: 2px solid white;
+    z-index: 1;
+    flex-shrink: 0;
 }
 
 .timeline-content {
     background-color: #1e1e1e;
     padding: 15px 20px;
     border-radius: 10px;
-    position: relative;
+    margin-left: 20px;
     color: white;
+    position: relative;
+    flex-grow: 1;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
@@ -205,10 +218,11 @@ nav ul li a:hover {
     border-color: transparent #1e1e1e transparent transparent;
 }
 
-.timeline-date {
+.timeline-range {
     font-size: 14px;
     color: #ccc;
-    margin-bottom: 10px;
     display: block;
+    margin-bottom: 8px;
 }
+
 
