@@ -149,3 +149,66 @@ nav ul li a:hover {
         max-width: 90%;
     }
 }
+
+/* Experience Timeline Styling */
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #FFD700;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 700px;
+    border-left: 4px solid #FFD700;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.timeline-content {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e1e1e transparent transparent;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: block;
+}
+
