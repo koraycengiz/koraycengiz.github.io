@@ -234,7 +234,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px; /* Adds space below the icon */
+    margin-bottom: 100px; /* Adds space below the icon */
     display: block;
 }
 
