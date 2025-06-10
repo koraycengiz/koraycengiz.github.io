@@ -321,3 +321,22 @@ nav ul li a:hover {
 }
 
 
+.spiral {
+    position: fixed;
+    top: 0;
+    height: 100vh; /* Full height */
+    z-index: 0; /* Behind content */
+    opacity: 0.2; /* Optional: for subtle effect */
+    pointer-events: none; /* Prevent it from capturing clicks */
+}
+
+.spiral-left {
+    left: 0;
+}
+
+.spiral-right {
+    right: 0;
+}
+
+
+
