@@ -334,10 +334,14 @@ nav ul li a:hover {
 }
 
 .spiral-left {
+    position: fixed;
+    width: 60px;
     left: 0;
 }
 
 .spiral-right {
+    position: fixed;
+    width: 60px;
     right: 0;
 }
 
