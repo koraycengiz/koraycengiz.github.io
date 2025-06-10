@@ -238,7 +238,7 @@ nav ul li a:hover {
 
 .project-card i {
     display: block;
-    margin-bottom: 12px; /* or any value that matches the spacing in the first two cards */
+    margin-bottom: 120px; /* or any value that matches the spacing in the first two cards */
     text-align: center;
 }
 
