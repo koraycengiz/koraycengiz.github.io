@@ -322,6 +322,7 @@ nav ul li a:hover {
 
 
 .spiral-container {
+    position: fixed;
     top: 0;
     height: 200vh;
     display: flex;
@@ -336,6 +337,7 @@ nav ul li a:hover {
     position: fixed;
     width: 60px;
     left: 0;
+    animation: scrollSpiral 20s linear infinite;
 }
 
 .spiral-right {
