@@ -345,7 +345,7 @@ nav ul li a:hover {
     z-index: 0;
     pointer-events: none;
     opacity: 0.5;
-     object-fit: cover;
+    object-fit: contain;
 }
 
 .spiral-right {
