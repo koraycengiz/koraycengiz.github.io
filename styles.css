@@ -349,12 +349,12 @@ nav ul li a:hover {
 
 /* Left spiral */
 .spiral-left {
-  left: 0;
+  left: 30;
 }
 
 /* Right spiral */
 .spiral-right {
-  right: 0;
+  right: 30;
 }
 
 /* Image style */
