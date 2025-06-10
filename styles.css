@@ -243,9 +243,15 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+.project-card i {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #FFD700;
+}
+
 .project-card h3 {
     font-size: 18px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     color: #FFD700;
 }
 
