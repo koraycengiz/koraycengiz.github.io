@@ -340,6 +340,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     animation: scrollSpiral 20s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .spiral-right {
