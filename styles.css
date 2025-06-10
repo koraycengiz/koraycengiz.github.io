@@ -284,10 +284,10 @@ nav ul li a:hover {
 /* Technologies Section */
 
 .tech-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 40px;
+    justify-items: center;
     margin-top: 20px;
 }
 
@@ -297,6 +297,7 @@ nav ul li a:hover {
     align-items: center;
     width: 100px; /* set fixed width */
     height: 100px; /* set fixed height */
+    justify-content: center;
     transition: transform 0.3s ease;
 }
 
@@ -311,6 +312,9 @@ nav ul li a:hover {
 .tech-item p {
     font-size: 14px;
     color: white;
+    height: 20px; /* ensures consistent height for labels */
+    text-align: center;
+    margin: 0;
 }
 
 .tech-item:hover {
