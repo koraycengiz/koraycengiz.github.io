@@ -243,7 +243,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.project-card img {
+.project-card i {
     width: 60px;
     height: 60px;
     object-fit: contain;
