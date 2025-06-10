@@ -234,9 +234,14 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 100px; /* Adds space below the icon */
-    display: block;
 }
+
+.project-card i {
+    display: block;
+    margin-bottom: 12px; /* or any value that matches the spacing in the first two cards */
+    text-align: center;
+}
+
 
 .project-card img {
     width: 60px;
