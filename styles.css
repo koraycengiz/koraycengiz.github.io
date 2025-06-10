@@ -324,11 +324,13 @@ nav ul li a:hover {
 .spiral {
     position: fixed;
     top: 0;
-    height: 100vh; /* Full height */
-    z-index: 0; /* Behind content */
-    opacity: 0.2; /* Optional: for subtle effect */
-    pointer-events: none; /* Prevent it from capturing clicks */
+    height: 100vh;
+    z-index: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    animation: floatDown 20s linear infinite;
 }
+
 
 .spiral-left {
     left: 0;
@@ -337,6 +339,17 @@ nav ul li a:hover {
 .spiral-right {
     right: 0;
 }
+
+
+@keyframes floatDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
 
 
 
