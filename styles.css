@@ -295,6 +295,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px; /* set fixed width */
+    height: 100px; /* set fixed height */
     transition: transform 0.3s ease;
 }
 
@@ -303,7 +305,7 @@ nav ul li a:hover {
 .tech-item img {
     width: 60px;
     height: 60px;
-    margin-bottom: 8px;
+    object-fit: contain;
 }
 
 .tech-item p {
