@@ -243,10 +243,11 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.project-card i {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #FFD700;
+.project-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
