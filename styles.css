@@ -283,12 +283,12 @@ nav ul li a:hover {
 
 /* Technologies Section */
 
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 30px;
-    max-width: 800px;
-    margin-top: 30px;
+.tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 .tech-item {
