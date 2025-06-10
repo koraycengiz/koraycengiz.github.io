@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -320,6 +321,20 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Shared spiral base styles */
+.spiral {
+  position: fixed;
+  top: 0;
+  height: 200vh;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  animation: scrollSpiral 20s linear infinite;
+  z-index: 1; /* Above background, but below content */
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 
 .spiral-container {
     position: fixed;
@@ -333,40 +348,31 @@ nav ul li a:hover {
     opacity: 0.5;
 }
 
+/* Left spiral */
 .spiral-left {
-    position: fixed;
-    width: 60px;
-    left: 0;
-    top: 0;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    animation: scrollSpiral 20s linear infinite;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.5;
-    object-fit: contain;
+  left: 0;
 }
 
+/* Right spiral */
 .spiral-right {
-    position: fixed;
-    width: 60px;
-    right: 0;
+  right: 0;
 }
 
-.spiral-container img {
-    width: 60px; /* adjust this if needed */
-    height: 100vh;
-    object-fit: cover;
+/* Image style */
+.spiral img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
+/* Scrolling animation */
 @keyframes scrollSpiral {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
 }
 
 
