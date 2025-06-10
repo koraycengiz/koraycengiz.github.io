@@ -244,8 +244,6 @@ nav ul li a:hover {
 }
 
 .project-card i {
-    width: 60px;
-    height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
 }
