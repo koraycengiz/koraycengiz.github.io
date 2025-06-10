@@ -236,13 +236,6 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.project-card i {
-    display: block;
-    margin-bottom: 120px; /* or any value that matches the spacing in the first two cards */
-    text-align: center;
-}
-
-
 .project-card img {
     width: 60px;
     height: 60px;
@@ -252,7 +245,7 @@ nav ul li a:hover {
 
 .project-card h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     color: #FFD700;
 }
 
