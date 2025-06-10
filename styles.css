@@ -10,6 +10,7 @@ body {
     background-color: black;
     color: white;
     line-height: 1.6;
+    z-index: -1;
 }
 
 header {
@@ -329,7 +330,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   animation: scrollSpiral 20s linear infinite;
-  z-index: -1; /* Above background, but below content */
+  z-index: 1; /* Above background, but below content */
   pointer-events: none;
   opacity: 0.5;
 }
