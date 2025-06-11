@@ -5,12 +5,21 @@
     box-sizing: border-box;
 }
 
-body {
+body , html{
     font-family: 'Arial', sans-serif;
     background-color: black;
     color: white;
     line-height: 1.6;
     z-index: -1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -353,6 +362,43 @@ nav ul li a:hover {
 }
 
 /* Scrolling animation */
+@keyframes scrollSpiralllll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+
+
+
+
+
+
+.spiral-column {
+  width: 200px; /* Adjust width as needed */
+  overflow: hidden;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.spiral-column img {
+  width: 100%;
+  height: 200vh;
+  object-fit: cover;
+  animation: scrollSpiral 20s linear infinite;
+}
+
+.content-column {
+  flex: 1;
+  padding: 2rem;
+  z-index: 1;
+  position: relative;
+  background-color: white; /* or any bg color */
+}
+
 @keyframes scrollSpiral {
   0% {
     transform: translateY(0);
@@ -361,6 +407,7 @@ nav ul li a:hover {
     transform: translateY(-100vh);
   }
 }
+
 
 
 

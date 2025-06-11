@@ -12,219 +12,223 @@
     
 <body>
 
-    <img src="assets/img/left_spiral.png" class="spiral spiral-left" alt="left spiral" />
-    <img src="assets/img/right_spiral.png" class="spiral spiral-right" alt="right spiral" />
+    <div class="page-layout">
+    <div class="spiral-column">
+      <img src="assets/img/left_spiral.png" alt="left spiral" />
+    </div>
 
 
 
-
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Koray Cengiz</h1>
+    <div class="content-column">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Koray Cengiz</h1>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#technologies">Technologies</a></li>
-                </ul>
-            </nav>
+        </header>
+        
+        <!-- Updated About Section (was previously id="home") -->
+        <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-left">
+                <div class="profile-picture">
+                    <img src="koray_pp.jpeg" alt="Koray Cengiz">
+                </div>
+                <div class="intro-text">
+                    <h2>Koray Cengiz</h2>
+                    <p>Junior Computer Engineer</p>
+                </div>
+            </div>
+            <div class="about-right">
+                <p>
+                    I am a computer engineering student at Izmir University of Economics. I am interested in cyber security,
+                    artificial intelligence and machine learning. I love to learn new things about any kind of technology and
+                    am open to discovering more about computer science and engineering. Also, I can easily fit into any workspace.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/koray-cengiz-02bb5220a/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/koraycengiz" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/koray_cengiz_/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:mkceng48@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </header>
-    
-    <!-- Updated About Section (was previously id="home") -->
-    <section id="about" class="section">
-    <div class="about-container">
-        <div class="about-left">
-            <div class="profile-picture">
-                <img src="koray_pp.jpeg" alt="Koray Cengiz">
-            </div>
-            <div class="intro-text">
-                <h2>Koray Cengiz</h2>
-                <p>Junior Computer Engineer</p>
-            </div>
-        </div>
-        <div class="about-right">
-            <p>
-                I am a computer engineering student at Izmir University of Economics. I am interested in cyber security,
-                artificial intelligence and machine learning. I love to learn new things about any kind of technology and
-                am open to discovering more about computer science and engineering. Also, I can easily fit into any workspace.
+    </section>
+
+
+        <!-- Other sections -->
+        <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+        <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <span class="timeline-date">Aug 2024 – Sep 2024</span>
+            <p><strong>Intern - Saint-Gobain Weber</strong><br>
+            Worked on mobile and web application development for company usage. Gained hands-on experience with industrial systems and teamwork in a corporate environment.
             </p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/koray-cengiz-02bb5220a/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/koraycengiz" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/koray_cengiz_/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="mailto:mkceng48@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <span class="timeline-date">Jul 2022 – Aug 2025</span>
+            <p><strong>Promotional Assistant - Izmir University of Economics</strong><br>
+            Introducing my university and my department to the candidates that are going to apply university.
+            </p>
+        </div>
+        </div>
+
+        <!-- Add more timeline-item blocks as needed -->
+        
+    </div>
+    </section>
+
+
+        <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+        <img src="assets/img/tarifenibul.png" alt="Project 1 Logo">
+        <h3>Tarifeni Bul</h3>
+        <p>AI based mobile tariff suggestion application for both Android and iOS. Users enter their past 5 months of mobile data and our custom-trained AI model predicts and suggests tariffs to users from Turkcell, Vodafone and Turk Telekom.</p>
+        </div>
+        <div class="project-card">
+        <img src="assets/img/travelmate.png" alt="Project 2 Logo">
+        <h3>Travel Mate</h3>
+        <p>Mobile social media application for travelers. You can search or create trips. Follow other travelers to find the best trip. Find a travel mate for a shared journey and more...</p>
+        </div>
+        <div class="project-card">
+        <i class="fas fa-calendar fa-3x"></i>
+        <h3>Course Scheduler</h3>
+        <p>Desktop application for scheduling university courses. You can assign available classrooms to existing lectures automatically. You can find the common free times of different groups of students and create new lecture for them and more...</p>
+        </div>
+        <div class="project-card">
+        <i class="fas fa-code fa-3x"></i>
+        <h3>Integrated Assignment Environment</h3>
+        <p>An environment to compile, interpret and run codes for different languages such as Python, C++, Java and more...</p>
+        </div>
+        <div class="project-card">
+        <i class="fas fa-book fa-3x"></i>
+        <h3>Jericho Dictionary</h3>
+        <p>An offline dictionary application that users can translate a word from a language to 7 other languages including Turkish, English, Spanish, German, French, Russian and Greek </p>
+        </div>
+        <div class="project-card">
+        <i class="fas fa-dungeon fa-3x"></i>
+        <h3>Cannon Fodder</h3>
+        <p>My junior year project about a simple MMORPG game that can be played on terminal with fighting, healing and magic mechanisms.</p>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="technologies" class="section">
+        <h2 class="section-title">Technologies</h2>
+        <div class="tech-row">
+            <div class="tech-item">
+                <img src="assets/img/java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/c++.png" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/Csharp.png" alt="C#">
+                <p>C#</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/flutter.png" alt="Flutter#">
+                <p>Flutter</p>
+            </div> 
+        </div>
+        
+
+        <div class="tech-row">
+            <div class="tech-item">
+                <img src="assets/img/firebase.png" alt="Firebase">
+                <p>Firebase</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/neo4j.png" alt="Neo4j">
+                <p>Neo4j</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/oracleapex.png" alt="Oracle Apex">
+                <p>Oracle Apex</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/css.png" alt="CSS">
+                <p>CSS</p>
+            </div> 
+        </div>    
+        
+        <div class="tech-row">
+            <div class="tech-item">
+                <img src="assets/img/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/powerapps.png" alt="Microsoft Powerapps">
+                <p>Microsoft Powerapps</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/sharepoint.png" alt="Microsoft Sharepoint">
+                <p>Microsoft Sharepoint</p>
+            </div>
+            <div class="tech-item">
+                <img src="assets/img/automate.png" alt="Microsoft Power Automate">
+                <p>Microsoft Power Automate</p>
             </div>
         </div>
-    </div>
-</section>
 
-
-    <!-- Other sections -->
-    <section id="experience" class="section">
-  <h2 class="section-title">Experience</h2>
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <span class="timeline-date">Aug 2024 – Sep 2024</span>
-        <p><strong>Intern - Saint-Gobain Weber</strong><br>
-          Worked on mobile and web application development for company usage. Gained hands-on experience with industrial systems and teamwork in a corporate environment.
-        </p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <span class="timeline-date">Jul 2022 – Aug 2025</span>
-        <p><strong>Promotional Assistant - Izmir University of Economics</strong><br>
-          Introducing my university and my department to the candidates that are going to apply university.
-        </p>
-      </div>
-    </div>
-
-    <!-- Add more timeline-item blocks as needed -->
-    
-  </div>
-</section>
-
-
-    <section id="projects" class="section">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <img src="assets/img/tarifenibul.png" alt="Project 1 Logo">
-      <h3>Tarifeni Bul</h3>
-      <p>AI based mobile tariff suggestion application for both Android and iOS. Users enter their past 5 months of mobile data and our custom-trained AI model predicts and suggests tariffs to users from Turkcell, Vodafone and Turk Telekom.</p>
-    </div>
-    <div class="project-card">
-      <img src="assets/img/travelmate.png" alt="Project 2 Logo">
-      <h3>Travel Mate</h3>
-      <p>Mobile social media application for travelers. You can search or create trips. Follow other travelers to find the best trip. Find a travel mate for a shared journey and more...</p>
-    </div>
-    <div class="project-card">
-      <i class="fas fa-calendar fa-3x"></i>
-      <h3>Course Scheduler</h3>
-      <p>Desktop application for scheduling university courses. You can assign available classrooms to existing lectures automatically. You can find the common free times of different groups of students and create new lecture for them and more...</p>
-    </div>
-    <div class="project-card">
-      <i class="fas fa-code fa-3x"></i>
-      <h3>Integrated Assignment Environment</h3>
-      <p>An environment to compile, interpret and run codes for different languages such as Python, C++, Java and more...</p>
-    </div>
-    <div class="project-card">
-      <i class="fas fa-book fa-3x"></i>
-      <h3>Jericho Dictionary</h3>
-      <p>An offline dictionary application that users can translate a word from a language to 7 other languages including Turkish, English, Spanish, German, French, Russian and Greek </p>
-    </div>
-    <div class="project-card">
-      <i class="fas fa-dungeon fa-3x"></i>
-      <h3>Cannon Fodder</h3>
-      <p>My junior year project about a simple MMORPG game that can be played on terminal with fighting, healing and magic mechanisms.</p>
-    </div>
-  </div>
-</section>
-
-
-<section id="technologies" class="section">
-    <h2 class="section-title">Technologies</h2>
-    <div class="tech-row">
-        <div class="tech-item">
-            <img src="assets/img/java.png" alt="Java">
-            <p>Java</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/python.png" alt="Python">
-            <p>Python</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/c++.png" alt="C++">
-            <p>C++</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/Csharp.png" alt="C#">
-            <p>C#</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/flutter.png" alt="Flutter#">
-            <p>Flutter</p>
-        </div> 
-    </div>
+    </section>
     
 
-    <div class="tech-row">
-        <div class="tech-item">
-            <img src="assets/img/firebase.png" alt="Firebase">
-            <p>Firebase</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/neo4j.png" alt="Neo4j">
-            <p>Neo4j</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/oracleapex.png" alt="Oracle Apex">
-            <p>Oracle Apex</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/html.png" alt="HTML">
-            <p>HTML</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/css.png" alt="CSS">
-            <p>CSS</p>
-        </div> 
-    </div>    
-    
-    <div class="tech-row">
-        <div class="tech-item">
-            <img src="assets/img/javascript.png" alt="JavaScript">
-            <p>JavaScript</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/powerapps.png" alt="Microsoft Powerapps">
-            <p>Microsoft Powerapps</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/sharepoint.png" alt="Microsoft Sharepoint">
-            <p>Microsoft Sharepoint</p>
-        </div>
-        <div class="tech-item">
-            <img src="assets/img/automate.png" alt="Microsoft Power Automate">
-            <p>Microsoft Power Automate</p>
-        </div>
-    </div>
-
-</section>
-
-
-
-
-
-
-
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
+    </script>
+</div>
+
+
+<div class="spiral-column">
+      <img src="assets/img/right_spiral.png" alt="right spiral" />
+    </div>
+  </div>
 
 
 </body>
