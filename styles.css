@@ -343,7 +343,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     animation: scrollSpiral 20s linear infinite;
-    opacity: 0.2;
+    opacity: 0.5;
     pointer-events: none;
     z-index: 0;
 }
