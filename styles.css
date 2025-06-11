@@ -97,8 +97,8 @@ nav ul li a:hover {
 }
 
 .profile-picture img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 3px solid #FFD700; /* Gold border */
 }
@@ -235,6 +235,8 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    color: inherit;
+    text-decoration: none;
 }
 
 .project-card img {
@@ -326,27 +328,15 @@ nav ul li a:hover {
   position: fixed;
   top: 0;
   height: 200vh;
-  width: 200px; /* <-- Increase from 80px to a wider value */
+  width: 350px; /* <-- Increase from 80px to a wider value */
   display: flex;
   flex-direction: column;
   animation: scrollSpiral 20s linear infinite;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-.spiral-cont {
-    position: fixed;
-    top: 0;
-    width: auto;
-    height: 200%; /* Enough to hold 2 spirals vertically */
-    display: flex;
-    flex-direction: column;
-    animation: scrollSpiral 20s linear infinite;
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
-}
 
 /* Left spiral */
 .spiral-left {
