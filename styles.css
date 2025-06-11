@@ -323,7 +323,7 @@ nav ul li a:hover {
 
 /* Shared spiral base styles */
 .spiral {
-  position: fixed;
+  position: relative;
   top: 0;
   height: 200vh;
   width: 180px;
