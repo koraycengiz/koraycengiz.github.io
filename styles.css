@@ -350,13 +350,12 @@ nav ul li a:hover {
 
 /* Left spiral */
 .spiral-left {
-    left: 0;
-  
+  left: 0;
 }
 
 /* Right spiral */
 .spiral-right {
-    right: 0;
+  right: 0;
 }
 
 /* Image style */
