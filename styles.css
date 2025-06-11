@@ -326,7 +326,7 @@ nav ul li a:hover {
   position: fixed;
   top: 0;
   height: 200vh;
-  width: 80px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   animation: scrollSpiral 20s linear infinite;
