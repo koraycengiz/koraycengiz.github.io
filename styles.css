@@ -338,7 +338,7 @@ nav ul li a:hover {
 .spiral-cont {
     position: fixed;
     top: 0;
-    width: auto;
+    width: 300px;
     height: 200%; /* Enough to hold 2 spirals vertically */
     display: flex;
     flex-direction: column;
