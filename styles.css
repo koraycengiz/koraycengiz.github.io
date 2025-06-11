@@ -335,6 +335,19 @@ nav ul li a:hover {
   opacity: 0.5;
 }
 
+.spiral-cont {
+    position: fixed;
+    top: 0;
+    width: auto;
+    height: 200%; /* Enough to hold 2 spirals vertically */
+    display: flex;
+    flex-direction: column;
+    animation: scrollSpiral 20s linear infinite;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
 /* Left spiral */
 .spiral-left {
   left: 0;
