@@ -394,7 +394,7 @@ nav ul li a:hover {
 .content-column {
   flex: 1;
   padding: 2rem;
-  z-index: -1;
+  z-index: 1;
   position: relative;
   background-color: black; /* or any bg color */
 }
